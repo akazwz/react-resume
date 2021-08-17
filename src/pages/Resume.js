@@ -1,11 +1,15 @@
+import React, {Fragment} from 'react';
+import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 
 const Resume = () => {
     return (
-        <div>
-            this is resume.
-            <Button>btn</Button>
-        </div>
+        <Fragment>
+            <Container maxWidth={"md"}>
+                <h1>resume</h1>
+                <Button>Button</Button>
+            </Container>
+        </Fragment>
     );
 }
 
