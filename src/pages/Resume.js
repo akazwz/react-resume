@@ -1,15 +1,18 @@
-import React, {Fragment} from 'react';
-import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
+import React from 'react';
+import {Layout} from 'antd';
+import '../App.less'
+import './resume.less'
+
+const {Header, Footer, Content} = Layout;
+
 
 const Resume = () => {
     return (
-        <Fragment>
-            <Container maxWidth={"md"}>
-                <h1>resume</h1>
-                <Button>Button</Button>
-            </Container>
-        </Fragment>
+        <Layout>
+            <Header className="header">Header</Header>
+            <Content>Content</Content>
+            <Footer>Footer</Footer>
+        </Layout>
     );
 }
 
